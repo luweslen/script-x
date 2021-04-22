@@ -5,8 +5,6 @@ function getStringBeetwenTags(string, tag){
 
   const stringBetweenTags = string.match(regex)
 
-  console.log(stringBetweenTags)
-
   const result = stringBetweenTags.map((item) => {
     return item.replace(/<\/?component>/g, '')
   })

@@ -2,9 +2,9 @@ import { readFileSync } from "fs"
 
 const BASE_PATH = "./src/inputFiles"
 
-function readFile(nameFile, formatFile){
+function readFile(inputFile){
   const fileData = 
-    readFileSync(`${BASE_PATH}/${nameFile}.${formatFile}`)
+    readFileSync(`${BASE_PATH}/${inputFile}`)
   
   const fileString = fileData.toString()
 
